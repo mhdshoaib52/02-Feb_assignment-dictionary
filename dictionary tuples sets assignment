@@ -1,0 +1,67 @@
+Q1. What are the characteristics of the tuples? Is tuple immutable?
+Tuples allow duplicate values and used to store date that does not change frequently.yes tuples are immutable.
+
+
+Q2.What are the two tuple methods in python? Give an example of each method. Give a reason why
+tuples have only two in-built methods as compared to Lists.
+ans;-count() and index() are the two tuple methods in python.example 
+t=(1,2,3,4,5,6)
+t.count(1)
+output ===  1
+index() function example
+t=(1,2,3,4,5,6)
+t.index(2)
+output === 1 
+tuples have only two built in functions because it is immutable unlike lists.
+
+Q3;-Which collection datatypes in python do not allow duplicate items? Write a code using a set to remove
+duplicates from the given list.
+ans;-set is a datatype that doesnot allow duplicates items.
+List = [1, 1, 1, 2, 1, 3, 1, 4, 2, 1, 2, 2, 2, 3, 2, 4, 3, 1, 3, 2, 3, 3, 3, 4, 4, 1, 4, 2, 4, 3, 4, 4]
+output== List = {1,2,3,4}
+Q4. Explain the difference between the union() and update() methods for a set. Give an example of
+each method.
+union() add new set of elements for a set
+update() update new elements into a set
+a.union(b) = new set with elements from both a and b
+a.update(b) = set a with elements added from b
+Q5;-What is a dictionary? Give an example. Also, state whether a dictionary is ordered or unordered.
+A dictionary is a collection which is ordered changeable and do not allow duplicates
+example;-d1={"name":"shoai","email":"md","number":1234}
+Q6. Can we create a nested dictionary? If so, please give an example by creating a simple one-level
+nested dictionary.
+yes we can create a nested dictionary to  simply pass dictionary key:value pair as keyword arguments to  create dict()
+nested_dict = { 'dict1': {'key_A': 'value_A'},
+				'dict2': {'key_B': 'value_B'}}
+Q7. Using setdefault() method, create key named topics in the given dictionary and also add the value of
+the key as this list ['Python', 'Machine Learning’, 'Deep Learning']
+dict1 = {'language' : 'Python', 'course': 'Data Science Masters'}
+ans;-dict.setdefault({'language' : 'Python', 'course': 'Data Science Masters'}('Python', 'Machine Learning’, 'Deep Learning'))
+Q8. What are the three view objects in dictionaries? Use the three in-built methods in python to display
+these three view objects for the given dictionary.
+dict1 = {'Sport': 'Cricket' , 'Teams': ['India', 'Australia', 'England', 'South Africa', 'Sri Lanka', 'New Zealand']}
+ans;-keys,values and items 
+
+dict1 = {'Sport': 'Cricket' , 'Teams': ['India', 'Australia', 'England', 'South Africa', 'Sri Lanka', 'New Zealand']}
+k = dict1.keys()
+print(k)
+print(type(k))
+
+dict_keys(['Sport', 'Teams'])
+<class 'dict_keys'>
+
+dict1 = {'Sport': 'Cricket' , 'Teams': ['India', 'Australia', 'England', 'South Africa', 'Sri Lanka', 'New Zealand']}
+k = dict1.values()
+print(k)
+print(type(k))
+
+dict_values(['Cricket', ['India', 'Australia', 'England', 'South Africa', 'Sri Lanka', 'New Zealand']])
+<class 'dict_values'>
+
+dict1 = {'Sport': 'Cricket' , 'Teams': ['India', 'Australia', 'England', 'South Africa', 'Sri Lanka', 'New Zealand']}
+k = dict1.items()
+print(k)
+print(type(k))
+
+dict_items([('Sport', 'Cricket'), ('Teams', ['India', 'Australia', 'England', 'South Africa', 'Sri Lanka', 'New Zealand'])])
+<class 'dict_items'>
